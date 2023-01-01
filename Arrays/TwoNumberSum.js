@@ -12,9 +12,12 @@
   You can assume that there will be at most one pair of numbers summing up to
   the target sum.
 
-  Challenges: Using two for loops as brute force solution. Using hash map lets 
-  you solve in linear time.
-  */
+  Challenges: Using two for loops as brute force. 
+  
+  Solution: Using hash table lets you solve in linear time.
+
+  Time & Space: 0(n)
+*/
 
 function twoNumberSum(array, targetSum) {
   
