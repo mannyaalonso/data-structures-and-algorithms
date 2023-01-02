@@ -12,24 +12,25 @@
 */
 
 function sortedSquaredArray(array) {
- 
+    
   let left = 0;
   let right = array.length - 1;
   let squaredArray = [];
 
   while (left <= right) {
     if (Math.abs(array[left]) <= Math.abs(array[right])) {
-        squaredArray.unshift(Math.pow(array[right], 2));
-        right--;
+      squaredArray.unshift(Math.pow(array[right], 2));
+      right--;
     } else if (Math.abs(array[left]) > Math.abs(array[right])) {
-        squaredArray.unshift(Math.pow(array[left], 2));
-        left++;
-    } 
+      squaredArray.unshift(Math.pow(array[left], 2));
+      left++;
+    }
   }
   console.log(squaredArray);
   return squaredArray;
 }
 
+//Test Case
 let array = [1, 2, 3, 5, 6, 8, 9];
 
 sortedSquaredArray(array); //Expected output: [1, 4, 9, 25, 36, 64, 81]

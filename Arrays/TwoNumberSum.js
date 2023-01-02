@@ -20,16 +20,16 @@
 */
 
 function twoNumberSum(array, targetSum) {
-  
+    
   let sums = {};
 
   for (i = 0; i < array.length; i++) {
     sum = targetSum - array[i];
     if (sums[sum]) {
-        console.log([sum, array[i]]);
-        return [sum, array[i]];
+      console.log([sum, array[i]]);
+      return [sum, array[i]];
     } else {
-        sums[array[i]] = true;
+      sums[array[i]] = true;
     }
   }
   console.log([]);
