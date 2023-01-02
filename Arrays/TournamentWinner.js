@@ -69,4 +69,4 @@ let competitions = [
 
 let results = [0, 0, 1];
 
-tournamentWinner(competitions, results); //Expected results: Python 6 points
+tournamentWinner(competitions, results); //Expected output: Python 6 points
