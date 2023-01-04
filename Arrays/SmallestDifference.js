@@ -20,12 +20,12 @@
 */
 
 function smallestDifference(arrayOne, arrayTwo) {
-
+    
   //Sort both arrays with any method (didn't include this code)
-  
+
   let left = 0;
   let right = 0;
-  let sum = 0; 
+  let sum = 0;
   let pairs = {};
 
   while (left < arrayOne.length && right < arrayTwo.length) {
@@ -44,7 +44,7 @@ function smallestDifference(arrayOne, arrayTwo) {
       break;
     }
   }
-  
+
   let values = Object.values(pairs);
   let sums = Object.keys(pairs);
   let min = Math.min(...sums);

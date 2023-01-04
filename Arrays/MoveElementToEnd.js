@@ -15,7 +15,7 @@
 */
 
 function moveElementToEnd(array, toMove) {
-
+    
   for (i = 0; i < array.length; i++) {
     if (array[i] == toMove) {
       array.push(array.splice(array.indexOf(array[i]), 1)[0]);
@@ -27,6 +27,6 @@ function moveElementToEnd(array, toMove) {
 
 //Test Case
 let array = [2, 1, 2, 2, 2, 3, 4, 2];
-let toMove = 2
+let toMove = 2;
 
 moveElementToEnd(array, toMove); //Expected output: [1, 3, 4, 2, 2, 2, 2, 2]
