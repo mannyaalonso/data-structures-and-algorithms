@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/Arrays/MoveElementToEnd.js",
+            "program": "${workspaceFolder}/Arrays/SpiralTraverse",
             "console": "integratedTerminal"
         }
     ]
